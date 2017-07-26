@@ -1,0 +1,18 @@
+$("#formPersona").validate({
+	rules:{
+		telefono{
+			required: true,
+			minlength: 5,
+			number: true
+		}
+	},
+
+	messages:{
+	telefono{
+			required: "Campo requerido",
+			minlength: "minimo 5",
+			number: "ingrese un numero valido"
+		}
+	}
+
+});
